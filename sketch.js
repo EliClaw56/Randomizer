@@ -1,13 +1,12 @@
 // [0,1,2,3...]
-let plants = [{
-  name: "Large",
-  color: "Green"
+let topic = [{
+  StarterA: "Spring"
 }, {
-  name: "Medium",
-  color: "purple"
+  StarterB: "Summer"
 }, {
-  name: "Small",
-  texture: "fuzzy"
+  StarterC: "Fall"
+}, {
+  StarterD: "Winter"
 }];
 
 let randomIndex;
@@ -15,13 +14,14 @@ let animating = false;
 // let counter = 0;
 
 function setup() {
-  createCanvas(400, 400);
-  textSize(32);
-  text("click to randomize",50,50);
+  createCanvas(600, 600);
+  textSize(25);
+  text("click to randomize",200,80);
 }
 
 function draw() {
   if(animating == true){
+    fill(random(255),random(255),random(255));
     ellipse(random(width),random(height),random(50,200));
   }
 }
@@ -39,7 +39,7 @@ function randomizer(){
     background(random(255), random(255), random(255));
     randomIndex = int(random(plants.length))
     console.log(plants[randomIndex].name);
-    text(plants[randomIndex].name, 50, 50);
+    text(plants[randomIndex].name + "'s ideal environment is", 50, 50);
     plants.splice(randomIndex, 1);
     console.log(plants);
   } else {
