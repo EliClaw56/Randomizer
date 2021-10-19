@@ -43,6 +43,7 @@ function draw() {
   textAlign(CENTER);
   text("Chatting with Chad",280,90);
   pop();
+  
 }
 
 function avatar() {
