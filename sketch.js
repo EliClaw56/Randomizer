@@ -32,7 +32,6 @@ function setup() {
   button.position(190, 280);
   button.mousePressed(button);
   button.class("randomizerButton");
-
 }
 
 function draw() {
@@ -43,7 +42,6 @@ function draw() {
   textAlign(CENTER);
   text("Chatting with Chad",280,90);
   pop();
-
 }
 
 function avatar() {
