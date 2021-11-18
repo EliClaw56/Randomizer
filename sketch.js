@@ -27,7 +27,7 @@ function setup() {
   textSize(13);
   text(0, 0, 0);
 
-  button = createButton("Generate Pick-up Line");
+  // button = createButton("Generate Pick-up Line");
   button = select('#genButton')
   button.position(190, 280);
   button.mousePressed(button);
